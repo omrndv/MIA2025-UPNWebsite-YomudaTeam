@@ -10,7 +10,7 @@
         <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white rounded-2xl shadow hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
                 <div class="relative">
-                    <img src="https://via.placeholder.com/400x300" alt="Produk 1" class="w-full rounded-t-2xl object-cover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYGhVhDDFlQNVJwPcBXTJzRk72LcoXdOplwQ&s" alt="Produk 1" class="w-full rounded-t-2xl object-cover">
                     <div class="absolute top-3 right-3 bg-white rounded-full shadow px-2 py-1 flex items-center gap-1 text-sm font-semibold">
                         <i class="fa-solid fa-star text-yellow-400"></i> 4.8
                     </div>
