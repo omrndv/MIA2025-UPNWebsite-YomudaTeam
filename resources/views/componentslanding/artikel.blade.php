@@ -61,7 +61,7 @@
                     </div>
                     <h3 class="text-xl font-bold mb-3">{{ $article['title'] }}</h3>
                     <p class="text-gray-600 mb-4">{{ $article['excerpt'] }}</p>
-                    <a href="{{ route('artikel.detail', ['slug' => Str::slug($article['title'])]) }}"
+                    <a href="{{ route('artikel.detail') }}"
                         class="text-orange-600 hover:text-orange-700 hover:bg-orange-50 px-0">
                         Baca Selengkapnya →
                     </a>

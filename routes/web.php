@@ -7,7 +7,7 @@ Route::get('/', function () {
 });
 Route::get('/detailartikel', function () {
     return view('componentsartikel.detail');
-});
+})->name('artikel.detail');
 
 Route::get('/admin', function () {
     return view('admin.auth.login');
