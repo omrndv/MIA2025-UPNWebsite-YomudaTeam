@@ -16,30 +16,30 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             @php
             $articles = [
-                [
-                    'icon' => 'fa-lightbulb',
-                    'title' => '5 Tips Memulai UMKM dari Nol',
-                    'excerpt' => 'Panduan lengkap untuk Anda yang ingin memulai usaha kecil dengan modal minim tapi hasil maksimal.',
-                    'category' => 'Tips Usaha',
-                    'readTime' => '5 menit',
-                    'image' => 'https://images.unsplash.com/photo-1595872018818-97555653a011'
-                ],
-                [
-                    'icon' => 'fa-bullhorn',
-                    'title' => 'Strategi Pemasaran Digital untuk UMKM',
-                    'excerpt' => 'Manfaatkan media sosial dan platform digital untuk meningkatkan penjualan produk Anda.',
-                    'category' => 'Pemasaran',
-                    'readTime' => '7 menit',
-                    'image' => 'https://images.unsplash.com/photo-1595872018818-97555653a011'
-                ],
-                [
-                    'icon' => 'fa-chart-line',
-                    'title' => 'Cara Meningkatkan Branding Produk Lokal',
-                    'excerpt' => 'Buat produk lokal Anda lebih menarik dan dikenal luas dengan strategi branding yang tepat.',
-                    'category' => 'Branding',
-                    'readTime' => '6 menit',
-                    'image' => 'https://images.unsplash.com/photo-1595872018818-97555653a011'
-                ],
+            [
+            'icon' => 'fa-lightbulb',
+            'title' => '5 Tips Memulai UMKM dari Nol',
+            'excerpt' => 'Panduan lengkap untuk Anda yang ingin memulai usaha kecil dengan modal minim tapi hasil maksimal.',
+            'category' => 'Tips Usaha',
+            'readTime' => '5 menit',
+            'image' => 'https://images.unsplash.com/photo-1595872018818-97555653a011'
+            ],
+            [
+            'icon' => 'fa-bullhorn',
+            'title' => 'Strategi Pemasaran Digital untuk UMKM',
+            'excerpt' => 'Manfaatkan media sosial dan platform digital untuk meningkatkan penjualan produk Anda.',
+            'category' => 'Pemasaran',
+            'readTime' => '7 menit',
+            'image' => 'https://images.unsplash.com/photo-1595872018818-97555653a011'
+            ],
+            [
+            'icon' => 'fa-chart-line',
+            'title' => 'Cara Meningkatkan Branding Produk Lokal',
+            'excerpt' => 'Buat produk lokal Anda lebih menarik dan dikenal luas dengan strategi branding yang tepat.',
+            'category' => 'Branding',
+            'readTime' => '6 menit',
+            'image' => 'https://images.unsplash.com/photo-1595872018818-97555653a011'
+            ],
             ];
             @endphp
 
@@ -61,9 +61,10 @@
                     </div>
                     <h3 class="text-xl font-bold mb-3">{{ $article['title'] }}</h3>
                     <p class="text-gray-600 mb-4">{{ $article['excerpt'] }}</p>
-                    <button onclick="alertFitur()" class="text-orange-600 hover:text-orange-700 hover:bg-orange-50 px-0">
+                    <a href="{{ route('artikel.detail', ['slug' => Str::slug($article['title'])]) }}"
+                        class="text-orange-600 hover:text-orange-700 hover:bg-orange-50 px-0">
                         Baca Selengkapnya →
-                    </button>
+                    </a>
                 </div>
             </div>
             @endforeach

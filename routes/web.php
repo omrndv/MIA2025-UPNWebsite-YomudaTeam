@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/detailartikel', function () {
+    return view('componentsartikel.detail');
+});
 
 Route::get('/admin', function () {
     return view('admin.auth.login');

@@ -1,11 +1,11 @@
 @php
 $navLinks = [
-['name' => 'Beranda', 'url' => '#beranda'],
-['name' => 'Kategori', 'url' => '#kategori'],
-['name' => 'Produk', 'url' => '#produk'],
-['name' => 'Tentang', 'url' => '#tentang'],
-['name' => 'Artikel', 'url' => '#artikel'],
-['name' => 'Testimoni', 'url' => '#testimoni'],
+    ['name' => 'Beranda', 'url' => '#beranda'],
+    ['name' => 'Kategori', 'url' => '#kategori'],
+    ['name' => 'Produk', 'url' => '#produk'],
+    ['name' => 'Tentang', 'url' => '#tentang'],
+    ['name' => 'Artikel', 'url' => '#artikel'],
+    ['name' => 'Testimoni', 'url' => '#testimoni'],
 ];
 
 $menuIcon = '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -20,7 +20,7 @@ $closeIcon = '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none
 @endphp
 
 <nav
-    class="bg-white sticky top-0 z-50 w-full shadow-md border-b border-orange-100 opacity-0 transition-opacity duration-1000" {{-- Durasi diubah menjadi 1000ms --}}
+    class="bg-white sticky top-0 z-50 w-full shadow-md border-b border-orange-100 opacity-0 transition-opacity duration-500"
     x-data="{ open: false }"
     id="main-navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,10 +88,10 @@ $closeIcon = '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none
 </nav>
 
 <script>
-    window.addEventListener('load', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         const navbar = document.getElementById('main-navbar');
-        if (navbar) {
-            navbar.classList.remove('opacity-0');
-        }
+        setTimeout(() => {
+            if (navbar) navbar.classList.remove('opacity-0');
+        }, 200);
     });
 </script>
