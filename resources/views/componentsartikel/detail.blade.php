@@ -1,88 +1,83 @@
-@extends('layouts.main')
+<section class="container mx-auto px-4 pt-16 pb-12 md:pb-20">
+    <article class="max-w-4xl mx-auto">
 
-@section('title', '5 Tips Memulai UMKM dari Nol')
-
-@section('content')
-    <section class="py-24 px-6 bg-gradient-to-br from-amber-50 to-orange-50 min-h-screen">
-        <div class="max-w-4xl mx-auto">
-
-            <a href="{{ url('/') }}#artikel" class="inline-flex items-center text-orange-600 hover:text-orange-700 mb-8 transition duration-300">
-                <i class="fa-solid fa-arrow-left mr-2"></i>
-                Kembali ke Artikel
-            </a>
-
-            <div data-aos="fade-up" class="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 mb-8">
-                <img src="https://images.unsplash.com/photo-1595872018818-97555653a011"
-                    alt="Ilustrasi Tips Memulai UMKM" class="w-full h-80 object-cover">
-                <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-1 rounded-full text-orange-600 font-semibold text-sm shadow-md">
-                    Tips Usaha
-                </div>
+        <header class="mb-10 text-center">
+            <span class="text-sm font-semibold uppercase tracking-wider text-orange-600 font-jakarta">Artikel Edukatif</span>
+            <h1 class="text-4xl md:text-5xl font-bricolage font-bold text-gray-900 leading-tight mt-2">
+                Strategi Pemasaran Digital untuk UMKM: Maksimalkan Penjualan dengan Platform Digital
+            </h1>
+            <div class="mt-4 text-sm text-gray-500 font-jakarta">
+                <span>Oleh: Tim Konten LokaMas</span> |
+                <span>26 Oktober 2025</span> |
+                <span class="font-medium text-indigo-600">Kategori: Pemasaran, Tips Usaha</span>
             </div>
+        </header>
 
-            <div data-aos="fade-up" data-aos-delay="50" class="text-center mb-10">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 font-bricolage">
-                    5 Tips Memulai UMKM dari Nol
-                </h1>
-                <p class="text-gray-500 flex items-center justify-center gap-2 text-sm">
-                    <i class="fa-solid fa-clock text-orange-600"></i> 5 menit baca
-                    <span class="mx-2 text-gray-400">•</span>
-                    <i class="fa-solid fa-user-circle text-orange-600"></i> Admin UMKM Banyumas
+        <figure class="mb-10">
+            <img src="https://idebiz.id/wp-content/uploads/2024/08/IDEBIZ-MARKETING-8-1.jpg"
+                alt="Ilustrasi Pemasaran Digital"
+                class="w-full h-auto rounded-xl shadow-lg object-cover">
+            <figcaption class="text-center mt-2 text-sm text-gray-500">
+                Memanfaatkan media sosial dan platform penjualan untuk pertumbuhan UMKM.
+            </figcaption>
+        </figure>
+
+        <div class="prose max-w-none text-gray-700 font-poppins text-lg leading-relaxed">
+
+            <p>
+                Di era digital, toko fisik tidak lagi cukup. Peluang terbesar bagi UMKM lokal Banyumas adalah mengubah ponsel menjadi etalase toko yang dapat diakses 24 jam sehari oleh siapa pun di seluruh Indonesia. Artikel ini akan memandu Anda untuk memanfaatkan **media sosial, *marketplace*, dan konten digital** yang mudah diakses dan berbiaya rendah untuk menembus pasar yang lebih luas.
+            </p>
+
+            <h2 class="text-2xl font-bricolage font-bold mt-8 mb-4 text-gray-800 flex items-center gap-2">
+                <i class="fab fa-instagram text-indigo-600"></i> Pilar 1: Kuasai Media Sosial (Jendela Visual)
+            </h2>
+
+            <h3 class="text-xl font-bold mt-6 mb-2 text-gray-800">A. Instagram & Facebook</h3>
+            <p>
+                Gunakan visual yang menarik, bukan hanya foto produk biasa. Tunjukkan **proses pembuatan, cerita di balik produk, atau interaksi dengan pelanggan**. Konsumen lebih suka membeli dari merek yang memiliki kisah. Selalu gunakan fitur Reels/Video Pendek karena memiliki jangkauan (*engagement*) yang jauh lebih tinggi daripada foto statis.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6 mb-2 text-gray-800">B. TikTok (Jangkauan Viral)</h3>
+            <p>
+                TikTok bukan hanya untuk menari. Manfaatkan TikTok untuk konten yang ringan, menghibur (*edutainment*), dan *relatable*. Tunjukkan keunikan lokal Banyumas dengan cara yang cepat dan menarik. Ikuti *trend* dan jangan takut bereksperimen.
+            </p>
+
+            <h2 class="text-2xl font-bricolage font-bold mt-8 mb-4 text-gray-800 flex items-center gap-2">
+                <i class="fas fa-shopping-basket text-indigo-600"></i> Pilar 2: Optimasi Platform Penjualan
+            </h2>
+
+            <p>
+                Manfaatkan platform penjualan untuk mempermudah transaksi. Di sinilah **LokaMas** (atau *marketplace* lainnya) memainkan peran penting. Selalu manfaatkan promo gratis ongkir, diskon, dan pastikan foto produk Anda standar, jelas, dan diambil dari berbagai sudut.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6 mb-2 text-gray-800">WhatsApp Business: Kasir 24 Jam</h3>
+            <p>
+                Jadikan WhatsApp Business sebagai *backend* layanan pelanggan yang efisien. Gunakan fitur **Katalog** untuk menampilkan produk tanpa harus mengirim banyak foto, dan fitur **Balasan Otomatis** (*auto-reply*) untuk menjawab pertanyaan umum di luar jam kerja. Ini membantu konversi penjualan saat Anda sedang sibuk.
+            </p>
+
+            <h2 class="text-2xl font-bricolage font-bold mt-8 mb-4 text-gray-800 flex items-center gap-2">
+                <i class="fas fa-comments text-indigo-600"></i> Pilar 3: Kekuatan Cerita dan Ulasan
+            </h2>
+
+            <p>
+                Tampilkan **ulasan positif** (testimoni) dari pelanggan sebagai konten reguler. Ulasan adalah bentuk kepercayaan. Selalu ajak interaksi di *caption* dengan mengajukan pertanyaan atau meminta saran. Respon cepat dan personal terhadap komentar dan DM adalah kunci untuk membangun komunitas pelanggan yang loyal.
+            </p>
+
+            <blockquote class="border-l-4 border-orange-500 pl-4 py-2 my-6 italic text-gray-600 bg-orange-50">
+                "Pemasaran digital tidak harus mahal. Dimulai dari satu platform, konsisten, dan berani bercerita. Kami di LokaMas siap mendukung langkah awal Anda."
+            </blockquote>
+
+            <div class="mt-10 p-6 bg-indigo-50 rounded-lg border border-indigo-200 text-center">
+                <h3 class="text-xl font-bricolage font-bold text-indigo-700 mb-3">Terapkan Strategi Ini Sekarang!</h3>
+                <p class="mb-4">
+                    Jangan tunda lagi! Mulailah dengan mengoptimasi bio Instagram Anda hari ini dan pelajari cara memaksimalkan toko Anda di LokaMas.
                 </p>
-            </div>
-
-            <article data-aos="fade-up" data-aos-delay="100" class="prose prose-lg max-w-none prose-orange mx-auto">
-                <p>
-                    Memulai usaha kecil atau UMKM dari nol memang menantang, terutama bagi Anda yang baru pertama kali
-                    terjun ke dunia bisnis. Namun dengan strategi yang tepat, bukan tidak mungkin usaha Anda bisa berkembang
-                    pesat. Berikut beberapa tips penting yang bisa Anda terapkan:
-                </p>
-
-                <h3>1. Tentukan Produk yang Tepat</h3>
-                <p>
-                    Pilih produk yang sesuai dengan kebutuhan pasar dan minat pribadi Anda. Dengan begitu, Anda akan lebih
-                    bersemangat menjalankannya dan memahami seluk-beluk produknya.
-                </p>
-
-                <h3>2. Buat Rencana Bisnis yang Jelas</h3>
-                <p>
-                    Rencana bisnis menjadi panduan arah perkembangan usaha Anda. Tentukan target pasar, strategi pemasaran,
-                    dan proyeksi keuangan sejak awal.
-                </p>
-
-                <h3>3. Manfaatkan Platform Digital</h3>
-                <p>
-                    Gunakan media sosial dan marketplace untuk memperluas jangkauan pelanggan. Saat ini, keberadaan online
-                    menjadi kunci utama agar bisnis bisa bersaing.
-                </p>
-
-                <h3>4. Kelola Keuangan dengan Bijak</h3>
-                <p>
-                    Pisahkan keuangan pribadi dengan bisnis. Catat setiap pemasukan dan pengeluaran agar bisa memantau
-                    perkembangan usaha secara akurat.
-                </p>
-
-                <h3>5. Konsisten dan Terus Belajar</h3>
-                <p>
-                    Dunia usaha terus berkembang. Jangan takut untuk berinovasi dan belajar dari pengalaman, baik dari
-                    kesuksesan maupun kegagalan.
-                </p>
-
-                <blockquote class="border-l-4 border-orange-500 pl-4 py-2 italic text-gray-600">
-                    "Kunci utama kesuksesan UMKM bukan hanya modal, tetapi semangat dan konsistensi dalam belajar serta beradaptasi."
-                </blockquote>
-
-                <p>
-                    Dengan menerapkan langkah-langkah di atas, Anda akan memiliki fondasi kuat untuk memulai UMKM yang
-                    berkelanjutan dan berdaya saing.
-                </p>
-            </article>
-
-            <div data-aos="fade-up" data-aos-delay="200" class="text-center mt-12">
-                <a href="{{ url('/') }}#artikel"
-                    class="inline-block bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-                    ← Kembali ke Daftar Artikel
+                {{-- Link ke halaman tips memulai UMKM --}}
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-600 hover:bg-orange-700 transition duration-150 ease-in-out">
+                    Lihat 5 Tips Memulai UMKM dari Nol <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
+
         </div>
-    </section>
-@endsection
+    </article>
+</section>

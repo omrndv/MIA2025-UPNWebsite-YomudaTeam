@@ -23,9 +23,12 @@
                     </div>
                     <div class="flex justify-between items-center mt-4">
                         <p class="text-orange-600 font-bold text-lg">Rp 15.000</p>
-                        <button class="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 transition">
+
+                        {{-- Tombol Lihat Detail diubah menjadi tag <a> --}}
+                        <a href="{{ route('produk.detail', ['slug' => 'getuk-goreng-sokaraja']) }}"
+                            class="inline-block bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 transition">
                             Lihat Detail
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -76,9 +79,9 @@
         </div>
 
         <div class="mt-10" data-aos="fade-up" data-aos-delay="800">
-            <button class="border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-6 py-2 rounded-lg transition font-medium">
+            <a href="{{ route('produk.katalog') }}" class="inline-block border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-6 py-2 rounded-lg transition font-medium">
                 Lihat Semua Produk
-            </button>
+            </a>
         </div>
     </div>
 </section>

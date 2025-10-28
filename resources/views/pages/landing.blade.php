@@ -1,5 +1,3 @@
-@extends('layouts.main')
-
 @section('content')
 @include('componentslanding.hero')
 @include('componentslanding.kategori')
@@ -8,4 +6,3 @@
 @include('componentslanding.artikel')
 @include('componentslanding.testimoni')
 @include('componentslanding.ajak')
-@endsection
