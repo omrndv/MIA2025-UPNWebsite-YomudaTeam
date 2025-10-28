@@ -13,20 +13,7 @@ Route::get('/detailartikel', [ArtikelController::class, 'detailartikel'])->name(
 
 Route::get('/katalog', [ProdukController::class, 'katalog'])->name('produk.katalog');
 Route::get('/produk/{slug}', [ProdukController::class, 'detail'])->name('produk.detail');
-// ===============================
-// HALAMAN UTAMA
-// ===============================
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/detailartikel', function () {
-    return view('componentsartikel.detail');
-})->name('artikel.detail');
-
-// ===============================
-// AUTH ADMIN (Login, Forgot, OTP, dll.)
-// ===============================
 Route::get('/admin', function () {
     return view('admin.auth.login');
 })->name('admin.login');
