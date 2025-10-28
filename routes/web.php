@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LandingController::class, 'index']);
 
-Route::get('/detailartikel', [ArtikelController::class, 'index'])->name('artikel.detail');;
+Route::get('/detailartikel', [ArtikelController::class, 'detailartikel'])->name('artikel.detail');;
 
 Route::get('/katalog', [ProdukController::class, 'katalog'])->name('produk.katalog');
 Route::get('/produk/{slug}', [ProdukController::class, 'detail'])->name('produk.detail');

@@ -9,19 +9,14 @@ class ProdukController extends Controller
     public function katalog()
     {
         return view('layouts.main', [
-            'page' => 'pages.produk', // Nama view untuk halaman katalog
+            'page' => 'pages.katalog-produk',
             'includeNavbar' => true,
             'includeFooter' => true,
-            // 'products' => $semuaProduk, // Kirim data produk
         ]);
     }
 
     public function detail($slug)
     {
-        // Dalam implementasi nyata, Anda akan mencari produk berdasarkan $slug dari database
-        // $product = Product::where('slug', $slug)->firstOrFail(); 
-
-        // Contoh data dummy untuk produk "Batik Banyumasan"
         $product = [
             'name' => 'Batik Banyumasan Tulis Motif Sido Mukti',
             'umkm' => 'Batik Nusantara',
@@ -37,12 +32,12 @@ class ProdukController extends Controller
                 'Ukuran' => '240 x 105 cm',
                 'Perawatan' => 'Cuci manual, jangan gunakan mesin, jemur di tempat teduh.'
             ],
-            'image_url' => asset('images/batik-banyumas-large.jpg'), // Ganti dengan path gambar besar
+            'image_url' => asset('images/batik-banyumas-large.jpg'),
             'stock' => 5
         ];
 
         return view('layouts.main', [
-            'page' => 'pages.detail-produk', // Ini adalah file view detail produk
+            'page' => 'pages.detail-produk', 
             'includeNavbar' => true,
             'includeFooter' => true,
             'product' => $product,

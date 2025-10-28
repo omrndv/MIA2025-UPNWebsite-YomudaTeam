@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class ArtikelController extends Controller
 {
-    public function index()
+    public function detailartikel()
     {
         return view('layouts.main', [
-            'page' => 'pages.artikel',
+            'page' => 'pages.detail-artikel',
             'includeNavbar' => true,
             'includeFooter' => true,
         ]);
